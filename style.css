@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #e0f7fa;
+  font-family: Arial, sans-serif;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#gameArea {
+  position: relative;
+  width: 600px;       /* ← ограничили ширину */
+  height: 80vh;       /* высота — 80% от окна */
+  max-height: 600px;  /* но не больше 600px */
+  border: 2px solid #333;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+#basket {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 40px;
+  background: #ff9800;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.falling {
+  position: absolute;
+  font-size: 32px;
+  top: -50px;
+  z-index: 5;
+}
+
+#ui {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #333;
+  z-index: 20;
+}
